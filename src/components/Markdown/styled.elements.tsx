@@ -31,7 +31,7 @@ export const StyledMarkdownBlock = styled(PrismDiv as StyledComponent<
 
   p {
     &:last-child {
-      margin-bottom: 0;
+      // margin-bottom: 0;
     }
   }
 
@@ -54,7 +54,7 @@ export const StyledMarkdownBlock = styled(PrismDiv as StyledComponent<
 
   h1 {
     ${headerCommonMixin(1)};
-    color: ${props => props.theme.colors.primary.main};
+    color: ${props => props.theme.colors.text.primary};
     margin-top: 0;
   }
 
@@ -80,7 +80,8 @@ export const StyledMarkdownBlock = styled(PrismDiv as StyledComponent<
   pre {
     font-family: ${props => props.theme.typography.code.fontFamily};
     white-space:${({ theme }) => (theme.typography.code.wrap ? 'pre-wrap' : 'pre')};
-    background-color: #263238;
+    background-color: #1a243a;
+    border-radius: 4px;
     color: white;
     padding: ${props => props.theme.spacing.unit * 4}px;
     overflow-x: auto;
@@ -103,9 +104,15 @@ export const StyledMarkdownBlock = styled(PrismDiv as StyledComponent<
   blockquote {
     margin: 0;
     margin-bottom: 1em;
-    padding: 0 15px;
-    color: #777;
-    border-left: 4px solid #ddd;
+    padding: 10px 15px;
+    color: #273656;
+    border-left: 4px solid #D0DEF2;
+    border-radius: 4px;
+    background-color: #F7F8FA;
+
+    p {
+      margin-bottom: 14px;
+    }
   }
 
   img {

@@ -29,7 +29,7 @@ export const StyledDropdown = styled(Dropdown)`
     vertical-align: middle;
     cursor: pointer;
     border-color: rgba(38, 50, 56, 0.5);
-    color: #263238;
+    color: #273656;
     outline: none;
     padding: 0.15em 1.5em 0.2em 0.5em;
     border-radius: 2px;
@@ -80,7 +80,7 @@ export const StyledDropdown = styled(Dropdown)`
 
   .Dropdown-option {
     font-size: 0.9em;
-    color: #263238;
+    color: #273656;
     cursor: pointer;
     padding: 0.4em;
 
@@ -115,6 +115,6 @@ export const SimpleDropdown = styled(StyledDropdown)`
 export const MimeLabel = styled.span`
   margin-left: 10px;
   text-transform: none;
-  font-size: 0.929em;
-  color: black;
+  font-size: 1em;
+  color: #273656;
 `;

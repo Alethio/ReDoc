@@ -14,31 +14,31 @@ const defaultTheme: ThemeInterface = {
   colors: {
     tonalOffset: 0.3,
     primary: {
-      main: '#32329f',
+      main: '#264FB8',
       light: ({ colors }) => lighten(colors.tonalOffset, colors.primary.main),
       dark: ({ colors }) => darken(colors.tonalOffset, colors.primary.main),
       contrastText: ({ colors }) => readableColor(colors.primary.main),
     },
     success: {
-      main: '#00aa13',
+      main: '#1CBF91',
       light: ({ colors }) => lighten(colors.tonalOffset, colors.success.main),
       dark: ({ colors }) => darken(colors.tonalOffset, colors.success.main),
       contrastText: ({ colors }) => readableColor(colors.success.main),
     },
     warning: {
-      main: '#d4ad03',
+      main: '#FF9F1C',
       light: ({ colors }) => lighten(colors.tonalOffset, colors.warning.main),
       dark: ({ colors }) => darken(colors.tonalOffset, colors.warning.main),
       contrastText: '#ffffff',
     },
     error: {
-      main: '#e53935',
+      main: '#F65555',
       light: ({ colors }) => lighten(colors.tonalOffset, colors.error.main),
       dark: ({ colors }) => darken(colors.tonalOffset, colors.error.main),
       contrastText: ({ colors }) => readableColor(colors.error.main),
     },
     text: {
-      primary: '#333333',
+      primary: '#273656',
       secondary: ({ colors }) => lighten(colors.tonalOffset, colors.text.primary),
     },
     border: {
@@ -64,12 +64,12 @@ const defaultTheme: ThemeInterface = {
       },
     },
     http: {
-      get: '#6bbd5b',
-      post: '#248fb2',
-      put: '#9b708b',
-      options: '#d3ca12',
-      patch: '#e09d43',
-      delete: '#e27a7a',
+      get: '#1CBF91',
+      post: '#356EFF',
+      put: '#FF9F1C',
+      options: '#99A7C2',
+      patch: '#FF9F1C',
+      delete: '#F65555',
       basic: '#999',
       link: '#31bbb6',
       head: '#c167e4',
@@ -87,7 +87,7 @@ const defaultTheme: ThemeInterface = {
     requireLabelColor: theme => theme.colors.error.main,
     labelsTextSize: '0.9em',
     nestingSpacing: '1em',
-    nestedBackground: '#fafafa',
+    nestedBackground: '#F7F8FA',
     arrow: {
       size: '1.1em',
       color: theme => theme.colors.text.secondary,
@@ -95,7 +95,7 @@ const defaultTheme: ThemeInterface = {
   },
   typography: {
     fontSize: '14px',
-    lineHeight: '1.5em',
+    lineHeight: '1.6em',
     fontWeightRegular: '400',
     fontWeightBold: '600',
     fontWeightLight: '300',
@@ -103,16 +103,16 @@ const defaultTheme: ThemeInterface = {
     smoothing: 'antialiased',
     optimizeSpeed: true,
     headings: {
-      fontFamily: 'Montserrat, sans-serif',
+      fontFamily: 'Barlow, sans-serif',
       fontWeight: '400',
       lineHeight: '1.6em',
     },
     code: {
-      fontSize: '13px',
+      fontSize: '1em',
       fontFamily: 'Courier, monospace',
       lineHeight: ({ typography }) => typography.lineHeight,
       fontWeight: ({ typography }) => typography.fontWeightRegular,
-      color: '#e53935',
+      color: '#356EFF',
       backgroundColor: 'rgba(38, 50, 56, 0.05)',
       wrap: false,
     },
@@ -124,8 +124,8 @@ const defaultTheme: ThemeInterface = {
   },
   menu: {
     width: '260px',
-    backgroundColor: '#fafafa',
-    textColor: '#333333',
+    backgroundColor: '#F7F8FA',
+    textColor: '#273656',
     groupItems: {
       textTransform: 'uppercase',
     },
@@ -143,12 +143,12 @@ const defaultTheme: ThemeInterface = {
     gutter: '2px',
   },
   rightPanel: {
-    backgroundColor: '#263238',
+    backgroundColor: '#273656',
     width: '40%',
-    textColor: '#ffffff',
+    textColor: '#F7F8FA',
   },
   codeSample: {
-    backgroundColor: ({ rightPanel }) => darken(0.1, rightPanel.backgroundColor),
+    backgroundColor: ({ rightPanel }) => darken(0.08, rightPanel.backgroundColor),
   },
 };
 

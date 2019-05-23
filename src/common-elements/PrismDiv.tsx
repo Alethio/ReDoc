@@ -45,11 +45,12 @@ export const PrismDiv = styled.div`
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: hsl(30, 20%, 50%);
+    color: #93A7C8;
+    opacity: 0.8;
   }
 
   .token.punctuation {
-    opacity: 0.7;
+    opacity: 0.6;
   }
 
   .namespace {
@@ -61,11 +62,11 @@ export const PrismDiv = styled.div`
   .token.number,
   .token.constant,
   .token.symbol {
-    color: #4a8bb3;
+    color: #FF9F1C;
   }
 
   .token.boolean {
-    color: firebrick;
+    color: #4a8bb3;
   }
 
   .token.selector,
@@ -74,7 +75,7 @@ export const PrismDiv = styled.div`
   .token.char,
   .token.builtin,
   .token.inserted {
-    color: #a0fbaa;
+    color: #20D8A4;
     & + a,
     & + a:visited {
       color: #4ed2ba;
@@ -82,9 +83,9 @@ export const PrismDiv = styled.div`
     }
   }
 
-  /* .property.token.string {
-    color: white;
-  } */
+  .property.token.string {
+    color: #EBF9FF;
+  }
 
   .token.operator,
   .token.entity,

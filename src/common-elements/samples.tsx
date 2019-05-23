@@ -8,6 +8,7 @@ export const SampleControls = styled.div`
 
   > span {
     display: inline-block;
+    border-radius: 4px;
     padding: 2px 10px;
     cursor: pointer;
 

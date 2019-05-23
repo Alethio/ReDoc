@@ -20,13 +20,15 @@ export class ResponseSamples extends React.Component<ResponseSamplesProps> {
       return response.content && response.content.hasSample;
     });
 
+    const hideTabList = responses.length === 1;
+
     return (
       (responses.length > 0 && (
         <div>
           <RightPanelHeader> Response samples </RightPanelHeader>
 
           <Tabs defaultIndex={0}>
-            <TabList>
+            <TabList hidden={hideTabList}>
               {responses.map(response => (
                 <Tab className={'tab-' + response.type} key={response.code}>
                   {response.code}

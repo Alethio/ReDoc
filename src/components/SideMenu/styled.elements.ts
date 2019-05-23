@@ -9,14 +9,14 @@ export const OperationBadge = styled.span.attrs((props: { type: string }) => ({
 }))<{ type: string }>`
   width: 32px;
   display: inline-block;
-  height: ${props => props.theme.typography.code.fontSize};
-  line-height: ${props => props.theme.typography.code.fontSize};
+  height: 14px;
+  line-height: 14px;
   background-color: #333;
   border-radius: 3px;
   background-repeat: no-repeat;
   background-position: 6px 4px;
-  font-size: 7px;
-  font-family: Verdana; // web-safe
+  font-size: 8px;
+  font-family: Barlow,Verdana,sans-serif; // web-safe
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -77,7 +77,7 @@ export const MenuItemUl = styled.ul<{ expanded: boolean }>`
   padding: 0;
 
   & & {
-    font-size: 0.929em;
+    font-size: 1em;
   }
 
   ${props => (props.expanded ? '' : 'display: none;')};
@@ -95,13 +95,13 @@ export const menuItemDepth = {
   0: css`
     opacity: 0.7;
     text-transform: ${({ theme }) => theme.menu.groupItems.textTransform};
-    font-size: 0.8em;
+    font-size: 0.929em;
     padding-bottom: 0;
     cursor: default;
     color: ${props => props.theme.menu.textColor};
   `,
   1: css`
-    font-size: 0.929em;
+    font-size: 1em;
     text-transform: ${({ theme }) => theme.menu.level1Items.textTransform};
     &:hover {
       color: ${props => props.theme.colors.primary.main};

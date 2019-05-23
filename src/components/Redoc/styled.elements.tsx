@@ -11,9 +11,10 @@ export const RedocWrap = styled.div`
   position: relative;
   text-align: left;
 
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: ${theme.typography.smoothing};
   font-smoothing: ${theme.typography.smoothing};
-  ${(theme.typography.optimizeSpeed && 'text-rendering: optimizeSpeed !important') || ''};
+  text-rendering: ${(theme.typography.optimizeSpeed && 'optimizeSpeed !important') || 'optimizeLegibility'};
 
   tap-highlight-color: rgba(0, 0, 0, 0);
   text-size-adjust: 100%;

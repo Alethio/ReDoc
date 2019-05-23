@@ -789,7 +789,7 @@ Complete rewrite also means that this rewrite may introduce issues, but they sho
 - Fonts are not loaded by ReDoc so you should load them. Default fonts can be loaded as bellow:
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Roboto:300,400,700" rel="stylesheet">
 ```
 - no more bower releases
 - no more GitHub pages-based CDN. Use [unpkg.com](https://unpkg.com/) to access ReDoc releases

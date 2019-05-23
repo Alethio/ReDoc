@@ -7,7 +7,7 @@ const ResponsesHeader = styled.h3`
   font-size: 18px;
   padding: 0.2em 0;
   margin: 3em 0 1.1em;
-  color: #253137;
+  color: #273656;
   font-weight: normal;
 `;
 

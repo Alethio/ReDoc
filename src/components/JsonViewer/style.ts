@@ -49,6 +49,7 @@ export const jsonStyles = css`
   .collapser {
     padding-right: 6px;
     padding-left: 6px;
+    opacity: 0.6;
   }
 
   ul {

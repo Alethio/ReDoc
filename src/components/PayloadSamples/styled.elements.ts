@@ -5,10 +5,11 @@ import styled from '../../styled-components';
 import { StyledDropdown } from '../../common-elements';
 
 export const MimeLabel = styled.div`
-  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #99A7C2;
   margin: 0 0 10px 0;
-  display: block;
-  color: rgba(255, 255, 255, 0.8);
+  // display: block;
+  display: none;
+  color: #99A7C2;
 `;
 
 export const InvertedSimpleDropdown = styled(StyledDropdown)`

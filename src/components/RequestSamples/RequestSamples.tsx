@@ -28,6 +28,7 @@ export class RequestSamples extends React.Component<RequestSamplesProps> {
       samples.length + (hasBodySample ? 1 : 0) === 1
         ? this.context.hideSingleRequestSampleTab
         : false;
+
     return (
       (hasSamples && (
         <div>

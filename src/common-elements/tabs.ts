@@ -25,7 +25,7 @@ export const Tabs = styled(ReactTabs)`
       margin: 0
         ${({ theme }) => `${theme.spacing.unit}px ${theme.spacing.unit}px ${theme.spacing.unit}px`};
       border: 1px solid ${({ theme }) => darken(0.05, theme.codeSample.backgroundColor)};
-      border-radius: 5px;
+      border-radius: 4px;
       min-width: 60px;
       font-size: 0.9em;
       font-weight: bold;
@@ -59,9 +59,13 @@ export const Tabs = styled(ReactTabs)`
   }
   > .react-tabs__tab-panel {
     background: ${({ theme }) => theme.codeSample.backgroundColor};
+    border-radius: 4px;
+    box-shadow: 0px 0px 42px rgba(208,222,242,0.06);
+
     & > div,
     & > pre {
       padding: ${props => props.theme.spacing.unit * 4}px;
+      padding-top: ${props => props.theme.spacing.unit * 2}px;
       margin: 0;
     }
 

@@ -84,7 +84,7 @@ Additionally, all the 1.x releases are hosted on our GitHub Pages-based **CDN**:
     <!-- needed for adaptive design -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Roboto:300,400,700" rel="stylesheet">
 
     <!--
     ReDoc doesn't change outer page styles

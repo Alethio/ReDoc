@@ -45,14 +45,16 @@ export const HttpVerb = styled.span.attrs((props: { type: string }) => ({
   text-transform: uppercase;
   font-family: ${props => props.theme.typography.headings.fontFamily};
   margin: 0;
+  border-radius: 4px;
+  font-weight: 600;
 `;
 
 export const ServersOverlay = styled.div<{ expanded: boolean }>`
   position: absolute;
   width: 100%;
   z-index: 100;
-  background: #fafafa;
-  color: #263238;
+  background: #F7F8FA;
+  color: #273656;
   box-sizing: border-box;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.33);
   overflow: hidden;
