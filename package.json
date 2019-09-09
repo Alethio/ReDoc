@@ -49,7 +49,8 @@
     "build:demo": "webpack --mode=production --config demo/webpack.config.ts",
     "deploy:demo": "npm run build:demo && deploy-to-gh-pages --update demo/dist",
     "license-check": "license-checker --production --onlyAllow 'MIT;ISC;Apache-2.0;BSD;BSD-2-Clause;BSD-3-Clause' --summary",
-    "docker:build": "docker build -f config/docker/Dockerfile -t redoc ."
+    "docker:build": "docker build -f config/docker/Dockerfile -t redoc .",
+    "prepare": "npm run bundle"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
