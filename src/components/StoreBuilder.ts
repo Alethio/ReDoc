@@ -47,8 +47,7 @@ export class StoreBuilder extends Component<StoreBuilderProps, StoreBuilderState
     resolvedSpec: null,
   };
 
-  @memoize
-  makeStore(spec, specUrl, options) {
+  makeStore = memoize((spec, specUrl, options) => {
     if (!spec) {
       return undefined;
     }
@@ -60,7 +59,7 @@ export class StoreBuilder extends Component<StoreBuilderProps, StoreBuilderState
       }
       throw e;
     }
-  }
+  });
 
   componentDidMount() {
     this.load();
